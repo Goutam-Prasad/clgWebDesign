@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toptable {
+  width: 30%;
+  background: linear-gradient(45deg, rgb(10, 238, 10), blue);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}

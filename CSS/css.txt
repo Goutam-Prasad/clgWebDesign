@@ -1,0 +1,78 @@
+23/05/22
+
+CSS is a extention of html document where a particular style is defined to expain the properties of that component
+at the runtime 
+
+We can say whenever CSS and scripting languages embeded with the html document it becomes dynamic 
+.There are two different way through which we can embed the style into the html document and these are
+
+Through <Link> tag and <style> tag
+Link is an open ended tag and always defined in the head section of any html document on the otherhand 
+we can embed the style to the exsiting HTML document as a class within the style tag and it is important to 
+note that style tag appears at the body part of the html document but
+ we can also place  the style tag in the head sectio also
+For better understand we may have the following example
+
+*ATRIBUTES THOSE ARE APLLICABLE IN CSS 
+
+color: Color attribute specifies the text color of a particular tag
+
+background-color:  It specifies the background color of the particular tag for which the style is defined
+
+background-image: It specifies  the background image and the syntax will be 
+background-image:url(<image path>)
+
+
+*Text Decortation within CSS
+
+Some of the attributes which appears in the body text can be listed as follows
+
+* text-align: It specifies the alignment of the text with the value left, right, center and justify
+
+* veritcal-align : veritcal align determines the elements vetical position and the values are basline, super, 
+                   sub, top, text-top, middle, bottom, text-bottom and also the percentage of the elements height
+
+* text-transform: It applies the transformation to the text and the values are uppercase lowercase capitalized and none
+
+* text-decoration: this attribute adds decoration to the elements text an the values are underline overline line-through blink
+                   and none
+
+* text-indent: This attribute indents the first line of the text and it specifies the elements width or length 
+                (gap within the starting line and the text)
+
+
+
+*CLASS IN CSS (25/05/22)
+
+So far we have seen the casscading style steel can be defined for a particular tag having the syntax as
+<style>
+    p
+    {
+        font-size:10px;
+    }
+</style>
+
+But question arises when we define a particular tag with a style sheet it will affect the entire documnent or page
+however if we want to define two diffrent paragraph in a particular html document with diffrent properties or style
+then we need classes within the sytle sheet for example if there exist 2 diifrent paragraph named as question and answer
+then we may define the classed within the style tag as follows
+
+<style>
+    p
+    {
+        font-size:10px;
+    }
+    .question
+    {
+        color:#112233
+    }
+    .answer
+    {
+        color:#1f2f3f
+    }
+</style>
+
+Sometimes we need to define the class without having any specific tag name at that time we will take the help of a special 
+tag called the span tag
+for example if we need to design the question with a higlighted keyword then we can do so using the span tag such as we 
+have done in the html file linked i

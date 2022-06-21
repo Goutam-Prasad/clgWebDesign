@@ -1,0 +1,31 @@
+body {
+  background-color: aquamarine;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+p {
+  color: rgb(82, 241, 14);
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-style: wavy;
+  text-indent: 30%;
+}
+
+.question {
+  color: black;
+}
+
+.answer {
+  color: red;
+}
+.decoration {
+  color: blue;
+  text-decoration: underline;
+}

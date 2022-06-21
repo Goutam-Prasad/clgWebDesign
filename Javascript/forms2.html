@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Second form</title>
+    <script lang="javascript">
+
+      function showCar(){
+          var car=document.pref.elements[0].value;
+          alert("Your favorite car is "+ car);
+      }
+
+      function showColor(){
+        var color=document.pref.color.value;
+        alert("Your Favorite color is "+this.color);
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" method="GET" name="pref">
+      Enter Your Favorite Car:<input type="text" size="15" name="car" />
+      <input
+        type="button"
+        name="carName"
+        onclick="showCar(this.form)"
+        value="car"
+      />
+      <br />
+      Enter Your Favorite Color:<input type="text" size="15" name="color" />
+      <input
+        type="button"
+        name="colorName"
+        onclick="showColor(this.form)"
+        value="color"
+      />
+    </form>
+  </body>
+</html>

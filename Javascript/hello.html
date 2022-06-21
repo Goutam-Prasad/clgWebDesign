@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Forms Array Example</title>
+    <script language="JavaScript">
+      <!--
+      function verifyZip(length) {
+        var zipEntry = document.forms[0].zip.value;
+        var zipNum = parseInt(zipEntry, 10);
+        if (document.forms[0].zip.value.length == length) {
+          if (zipNum != 0 && isNaN(zipNum) == false) {
+            alert(zipEntry + " is a valid zip code");
+          } else {
+            alert("Invalid Zip Code Entered.");
+          }
+        } else {
+          alert("Invalid Zip Code Entered.");
+        }
+      }
+
+      function myName() {
+        var name = document.form2.name.value;
+        alert("You Entered: " + name);
+      }
+      -->
+    </script>
+  </head>
+  <body>
+    <p>
+      <center><b>Forms Example</b></center>
+      <br /><br /><br />
+    </p>
+
+    <table>
+      <form name="form1" method="POST">
+        <tr>
+          <td align="right">Enter a 5 Digit Zip Code:</td>
+          <td align="left">
+            <input type="TEXT" name="zip" size="15" />
+            <input
+              type="BUTTON"
+              name="button1"
+              value="Verify"
+              onClick="verifyZip(5)"
+            />
+          </td>
+        </tr>
+      </form>
+      <form name="form2" action="" method="post">
+        <tr>
+          <td align="right">Enter Your Name:</td>
+          <td align="left">
+            <input type="TEXT" name="name" size="15" />
+            <input
+              type="BUTTON"
+              name="button2"
+              value="Show Name"
+              onClick="myName(this.form)"
+            />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+javascript is a scripting language which defines some scripts and acan be easily embeded  with HTML , XML , SGML  etc
+here the scripting languages are genrally used for data processing because the scripting languages are genrally equiped with
+features like a programming language such as it has control flows(i.e selection iteration and jump) like while loop 
+if condition switch statement etc
+
+Javascript in HTML can be embeded with the script tag such as <script language="javascript"> usually these script tag
+contains the javascript codes in HTML body and we can define the variables within the head tag.
+
+For example:
+
+<HEAD>
+
+var=a.2.5;
+function display()
+{
+    document.write.println("Hello")
+}
+</HEAD>
+then we call the function in the Script tag wthout writing the function in the script tag
+
+ Usually Javascript runs with the help functions
+and the functions will be called or invoked whenever it is required
+
+
+
+Form Processiing in javascript
+
+The form Processing in javascript refres t the passing of the feild information form the browser to the
+server for furthur processing at their end in order to do so the action attribute and the method attribute 
+within the form tag where we must specify the js file through which the onformation will be processed and the method
+need to be specifies either get or post here get and post method are two distinct method of form submissions and each
+method has its own style of form processing the get method is the default method in a particular HTML form in which
+the informations are passed to the server on the url itself
+
+On the other hand the post method uses the action attribute where the specified url will be sent as a http response
+withih the body of the html page therefore these thw methods of formp processing acts diffrently
+for diffrent situation for example if we need ot send a large amount of data from the browser to the server then we 
+shall use the post method similary if we have small amount of data to be sent froom the broser to the server then we 
+should use the get method.For easy processing of information from the forms we need ot use form array if the document 
+is containing multiple forms in a single document when multple forms exists in a particular document we need 
+to process each individual form such as document.form[0] to get acess of the first form document.form[1] to get the 
+acess of the second form
+
+
+we can have a small example to demonstrate ohw the form processing happens in the form array
+
+<HTML>
+<HEAD>
+<TITLE>MY page</TITLE>
+<script lang="javascript">
+
+ function verfiyZip(length){
+  var zipEntry=document.form[0].zip.value;
+  var zipNum=parseInt(zipEntry,6);
+  if(document.form[0].zip.length==length)
+  {
+      if(zipEntry!=0 &&isNaN(zipNUM)==false){
+          alert(ZipEntry+ "is the value of zipCode")
+      }
+  }
+  else
+  {
+      alert("Please Re-enter")
+  }
+
+ }
+</HEAD>
+</HTML>
+
+
+
+Accessing and writing information to the form
+
+as shown in the previous example we have seen how he form array can be used to acess multiple forms in a particular 
+document. However just like the document object contains the forms array the ofrm object also contains the arrays
+of elements and can be accessed and manipulated using index
+we can have a small exaple to demonstate the same as follows
